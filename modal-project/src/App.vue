@@ -1,26 +1,15 @@
 <template>
   <div>
-    <p>{{ title }}</p>
-    <div v-if="showModal"> 
-    <Modal theme="Sale" @close="toggleModal">
-      <h1>Ninja Giveaway</h1>
-      <p>Testing slots</p>
-      <template>
-        <a href="#">Sign up now</a>
-        <a href="#">More Info</a>
-      </template>
-    </Modal>
-    </div>
-    <button @click="toggleModal">Open Modal</button>
+
   </div>
 </template>
 
 <script>
-import Modal from "./components/Modal.vue"
+
 
 export default {
   name: 'App',
-  components: { Modal },
+  components: {  },
   data() {
     return {
       title: 'My First Vue.js App',
